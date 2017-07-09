@@ -21,7 +21,7 @@ public class PlayerController: MonoBehaviour {
  //       rb.AddForce(movement * speed);
  //   }
 
-     public float playerSpeed = 1000.0f;
+     public float playerSpeed = 10000.0f;
      public float playerRotateSpeed = 100.0f;
  
    
@@ -38,7 +38,7 @@ public class PlayerController: MonoBehaviour {
        
         transform.Rotate(Vector3.back * Input.GetAxis("Horizontal") * playerRotateSpeed * Time.deltaTime);
        
-        transform.Translate(Vector3.up * Input.GetAxis("Vertical") * playerSpeed * Time.deltaTime);
+        transform.Translate(Vector3.up * Input.GetAxis("Vertical") * playerSpeed );
        
     }
 
